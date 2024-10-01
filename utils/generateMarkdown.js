@@ -2,18 +2,30 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "none") {
-    return `![Github license]((https://img.shields.io/badge/license-${license}-blue.svg)`;
-  }
-  return "";
-}
+    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  } else
+  return ``;
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license !== "None") {
+    return `- [License](#license-📝)`
+  }
+  return ``;
+};  
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license !== "None") {
+    return `## License 📝
+    This application is covered by the ${license} license.`
+  }
+  return ``;
+
+};  
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -21,22 +33,18 @@ function generateMarkdown(data) {
 
 ${renderLicenseBadge(data.license)}
 
-${data.name}
-
 ## Description
 ${data.description}
 
-## Screenshot
-![alt-text](${data.screenshot})
-
 ## Table of Contents
-* [Languages & Dependencies](#languagesanddependencies)
+* [Description](#description)
+* [Installation, Languages & Dependencies](#installationlanguagesanddependencies)
 * [How to Use This Application](#HowtoUseThisApplication)
 * [Contributors](#contributors)
 * [Testing](#testing)
 * [Questions](#questions)
 
-## Languages & Dependencies
+## Installation, Languages, & Dependencies
 ${data.require}
 
 ## How to Use This Application:
@@ -52,7 +60,7 @@ ${data.contributors}
 ${data.deploy}
 
 ## Questions
-Please send your questions [here](mailto:${data.email}?subject=[GitHub]%20Dev%20Connect) or visit [github/${data.github}](https://github.com/${data.github}).
+Please send your questions to my email [${data.email}](mailto:${data.email}?subject=[GitHub]%20Dev%20Connect) or visit [github/${data.github}](https://github.com/${data.github}).
 `;
 }
 
