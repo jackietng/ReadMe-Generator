@@ -1,10 +1,10 @@
 // TODO: Include packages needed for this application
 import fs from 'fs';
 import inquirer from 'inquirer';
+import generateMarkdown from './utils/generateMarkdown.js';
 
 // TODO: Create an array of questions for user input
 const questions = [
-    inquirer.prompt([
         {
           type: 'input',
           message: 'What would you like your repository title to be?',
@@ -17,7 +17,7 @@ const questions = [
         },
         {
           type: 'input',
-          message: 'Provide a description of your application:',
+          message: 'Please provide a description of your application:',
           name: 'description',
         },
         {
@@ -68,9 +68,7 @@ const questions = [
         message: 'Where is this application deployed at?',
         name: 'deploy',
     },
-      ])
-    
-];
+ ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
