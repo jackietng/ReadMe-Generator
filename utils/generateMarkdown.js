@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `- [License](#license-📝)`
+    return `[License](#license-📝)`
   }
   return ``;
 };  
@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "None") {
     return `## License 📝
-    This application is covered by the ${license} license.`
+    This application is covered by the ${data.license} license.`
   }
   return ``;
 
@@ -42,6 +42,7 @@ ${data.description}
 * [How to Use This Application](#HowtoUseThisApplication)
 * [Contributors](#contributors)
 * [Testing](#testing)
+* [License](#license)
 * [Questions](#questions)
 
 ## Installation, Languages, & Dependencies
@@ -58,6 +59,9 @@ ${data.contributors}
 
 ## Deployed Application
 ${data.deploy}
+
+## License
+This application is covered by the ${data.license} license.
 
 ## Questions
 Please send your questions to my email [${data.email}](mailto:${data.email}?subject=[GitHub]%20Dev%20Connect) or visit [github/${data.github}](https://github.com/${data.github}).
