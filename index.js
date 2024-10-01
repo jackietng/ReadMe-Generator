@@ -31,22 +31,12 @@ const questions = [
         },
         {
             type: 'input',
-            message: 'What would you like your project name to be?',
-            name: 'name',
-        },
-        {
-            type: 'input',
             message: 'Please provide a description of your application:',
             name: 'description',
         },
         {
             type: 'input',
-            message: 'Please provide the image you want to use as the screenshot:',
-            name: 'screenshot',
-        },
-        {
-            type: 'input',
-            message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the devlopment environment running.',
+            message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
             name: 'require',
         },
         {
