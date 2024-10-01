@@ -15,9 +15,9 @@ by Jacqueline Nguyen
 ## Description
 This ReadMe generator was created by using NodeJS and Inquirer (an NPM product). This app automatically generates professional ReadMe's.
 ## Requirements
-Inquirer 8.2.4 (or later)
+Inquirer
 ## Usage
-Markdown, JavaScript, Node, JSON
+Markdown, JavaScript, NodeJS, JSON
 ## Contact-Me
 * Name - Jacqueline Nguyen
 * Email - jn1thythy56@gmail.com
