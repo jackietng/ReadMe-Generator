@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 import fs from 'fs';
 import inquirer from 'inquirer';
+import path from 'path';
 import generateMarkdown from './utils/generateMarkdown.js';
 
 // TODO: Create an array of questions for user input
@@ -79,7 +80,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating Professional README.md File...");
-        writeToFile(".dis/README.md", generateMarkdown({...responses}));
+        writeToFile(".dist/README.md", generateMarkdown({...responses}));
     });
 }
 
